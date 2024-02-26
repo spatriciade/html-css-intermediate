@@ -1,0 +1,17 @@
+body {
+    background-color: #292a2b;
+    font-size: 1.5rem;
+    
+    }
+    table{
+      background-color: #fff;
+      padding: 1em;
+      border-radius: 0.7em;
+      margin: 2% auto;
+    }
+    th,
+    td{
+      padding: 1em;
+      border: 1px solid #333;
+      border-radius: 0.7em;
+    }

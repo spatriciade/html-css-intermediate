@@ -1,0 +1,11 @@
+body{
+    background-color: white;
+}
+table{
+    background-color: white;
+    border: 5em;
+    border-color: black;    
+}
+tr,td{
+    border: black;
+}
