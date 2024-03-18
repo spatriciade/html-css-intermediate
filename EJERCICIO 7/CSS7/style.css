@@ -10,12 +10,14 @@ body {
 
 .image-grid {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  height: 100vh;
+  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(6, 1fr);
   grid-gap: 10px;
   width: 100%;
   max-width: 1000px;
   margin: 0 auto;
+  position: relative; /* Necesitamos establecer position: relative en el contenedor .image-grid */
 }
 
 .image-text {
@@ -25,229 +27,313 @@ body {
   font-family: "Madimi One", sans-serif;
   font-weight: 900;
   font-style: italic;
-  font-size: 80px;
+  font-size: 30px;
   background-color: transparent;
   color: rgb(236, 230, 230);
+  margin: 5px; 
 }
 
-.image-item1 {
+.image-item1 .image-text,
+.image-item2 .image-text,
+.image-item3 .image-text,
+.image-item7 .image-text,
+.image-item6 .image-text,
+.image-item5 .image-text,
+.image-item8 .image-text,
+.image-item9 .image-text,
+.image-item16 .image-text,
+.image-item10 .image-text,
+.image-item11 .image-text,
+.image-item12 .image-text,
+.image-item13 .image-text,
+.image-item14 .image-text,
+.image-item23 .image-text,
+.image-item27 .image-text,
+.image-item18 .image-text,
+.image-item19 .image-text,
+.image-item21 .image-text,
+.image-item22 .image-text,
+.image-item26 .image-text,
+.image-item28 .image-text,
+.image-item25 .image-text,
+.image-item29 .image-text,
+.image-item17 .image-text {
+
+  position:absolute;
+  top: 0;
+  left: 0;
+  transform: translate(5px, 5px);
+}
+
+.image-item1 img {
+  position: relative;
   grid-column: 1 / span 2;
   grid-row: 1 / span 3;
   overflow: hidden;
   border: solid whitesmoke;
-  width: 100%;
+  max-width: 100%;
+  max-height: 100%;
   height: auto;
 }
 
-.image-item2 {
+.image-item2 img {
+  position: relative;
   grid-column: 3 / span 2;
   grid-row: 1 / span 2;
   overflow: hidden;
   border: solid whitesmoke;
-  width: 100%;
+  max-width: 100%;
+  max-height: 100%;
   height: auto;
 }
 
-.image-item3 {
+.image-item3 img {
+  position: relative;
   grid-column: 1 / span 3;
   grid-row: 4 / span 2;
   overflow: hidden;
   border: solid whitesmoke;
-  width: 100%;
+  max-width: 100%;
+  max-height: 100%;
   height: auto;
 }
 
-.image-item7 {
+.image-item7 img {
+  position: relative;
   grid-column: 4 / span 2;
     grid-row: 4 / span 3;
-  overflow: hidden;
-  border: solid whitesmoke;
-  width: 100%;
-  height: auto;
+    overflow: hidden;
+    border: solid whitesmoke;
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
 }
 
-.image-item6 {
+.image-item6 img {
+  position: relative;
   grid-column: 1 / span 2;
     grid-row: 6;
-  overflow: hidden;
-  border: solid whitesmoke;
-  width: 100%;
-  height: auto;
+    overflow: hidden;
+    border: solid whitesmoke;
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
 }
 
-.image-item5 {
+.image-item5 img {
+  position: relative;
   grid-column: 3 / span 3;
     grid-row: 6;
-  overflow: hidden;
-  border: solid whitesmoke;
-  width: 100%;
-  height: auto;
+    overflow: hidden;
+    border: solid whitesmoke;
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
 }
 
-.image-item8 {
+.image-item8 img {
+  position: relative;
   grid-column: 3 / span 2;
     grid-row: 3 / span 2;
-  overflow: hidden;
-  border: solid whitesmoke;
-  width: 100%;
-  height: auto;
+    overflow: hidden;
+    border: solid whitesmoke;
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
 }
 
-.image-item9 {
+.image-item9 img {
+  position: relative;
   grid-column: 1 / span 5;
     grid-row: 1;
-  overflow: hidden;
+    overflow: hidden;
   border: solid whitesmoke;
-  width: 100%;
+  max-width: 100%;
+  max-height: 100%;
   height: auto;
 }
 
-.image-item16 {
+.image-item16 img {
+  position: relative;
   grid-column: 3 / span 2;
     grid-row: 4;
-  overflow: hidden;
-  border: solid whitesmoke;
-  width: 100%;
-  height: auto;
+    overflow: hidden;
+    border: solid whitesmoke;
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
 }
 
-.image-item10 {
+.image-item10 img {
+  position: relative;
   grid-column: 1 / span 2;
     grid-row: 5;
-  overflow: hidden;
-  border: solid whitesmoke;
-  width: 100%;
-  height: auto;
+    overflow: hidden;
+    border: solid whitesmoke;
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
 }
 
-.image-item11 {
+.image-item11 img {
+  position: relative;
   grid-column: 3 / span 2;
   grid-row: 5;
   overflow: hidden;
   border: solid whitesmoke;
-  width: 100%;
+  max-width: 100%;
+  max-height: 100%;
   height: auto;
 }
 
-.image-item12 {
+.image-item12 img {
+  position: relative;
   grid-column: 1 / span 3;
     grid-row: 2;
-  overflow: hidden;
-  border: solid whitesmoke;
-  width: 100%;
-  height: auto;
+    overflow: hidden;
+    border: solid whitesmoke;
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
 }
 
-.image-item13 {
+.image-item13 img {
+  position: relative;
   grid-column: 4 / span 2;
     grid-row: 2;
-  overflow: hidden;
-  border: solid whitesmoke;
-  width: 100%;
-  height: auto;
+    overflow: hidden;
+    border: solid whitesmoke;
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
 }
 
-.image-item14 {
+.image-item14 img {
+  position: relative;
   grid-column: 1 / span 5;
     grid-row: 2;
-  overflow: hidden;
-  border: solid whitesmoke;
-  width: 100%;
-  height: auto;
+    overflow: hidden;
+    border: solid whitesmoke;
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
 }
 
-.image-item23 {
+.image-item23 img{
+  position: relative;
+
   grid-column: 1 / span 2;
     grid-row: 1;
-  overflow: hidden;
-  border: solid whitesmoke;
-  width: 100%;
-  height: auto;
+    overflow: hidden;
+    border: solid whitesmoke;
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
 }
-.image-item27 {
+.image-item27 img{
+  position: relative;
   grid-column: 3 / span 2;
     grid-row: 4;
-  overflow: hidden;
-  border: solid whitesmoke;
-  width: 100%;
-  height: auto;
+    overflow: hidden;
+    border: solid whitesmoke;
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
 }
-.image-item18 {
+.image-item18 img {
+  position: relative;
   grid-column: 1 / span 5;
   grid-row: 5;
   overflow: hidden;
   border: solid whitesmoke;
-  width: 100%;
+  max-width: 100%;
+  max-height: 100%;
   height: auto;
 }
-.image-item19 {
+.image-item19 img {
+  position: relative;
   grid-column: 1 / span 2;
     grid-row: 1;
-  overflow: hidden;
-  border: solid whitesmoke;
-  width: 100%;
-  height: auto;
+    overflow: hidden;
+    border: solid whitesmoke;
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
 }
 
-.image-item21 {
+.image-item21 img{
+  position: relative;
   grid-column: 3 / span 2;
   grid-row: 1;
   overflow: hidden;
   border: solid whitesmoke;
-  width: 100%;
+  max-width: 100%;
+  max-height: 100%;
   height: auto;
 }
 
-.image-item22 {
+.image-item22 img {
+  position: relative;
   grid-column: 1 / span 3;
   grid-row: 3;
   overflow: hidden;
   border: solid whitesmoke;
-  width: 100%;
+  max-width: 100%;
+  max-height: 100%;
   height: auto;
 }
 
-.image-item26 {
+.image-item26 img {
+  position: relative;
   grid-column: 4 / span 2;
     grid-row: 3;
-  overflow: hidden;
-  border: solid whitesmoke;
-  width: 100%;
-  height: auto;
+    overflow: hidden;
+    border: solid whitesmoke;
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
 }
 
-.image-item28 {
+.image-item28 img {
+  position: relative;
   grid-column: 1 / span 2;
     grid-row: 5;
-  overflow: hidden;
-  border: solid whitesmoke;
-  width: 100%;
-  height: auto;
+    overflow: hidden;
+    border: solid whitesmoke;
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
 }
 
-.image-item25 {
+.image-item25 img {
+  position: relative;
   grid-column: 3 / span 2;
     grid-row: 5;
-  overflow: hidden;
-  border: solid whitesmoke;
-  width: 100%;
-  height: auto;
+    overflow: hidden;
+    border: solid whitesmoke;
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
 }
 
-.image-item29 {
+.image-item29 img {
+  position: relative;
   grid-column: 1 / span 2;
     grid-row: 1;
-  overflow: hidden;
-  border: solid whitesmoke;
-  width: 100%;
-  height: auto;
+    overflow: hidden;
+    border: solid whitesmoke;
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
 }
-.image-item17 {
+.image-item17 img {
+  position: relative;
   grid-column: 1 / span 5;
   grid-row: 5;
   overflow: hidden;
   border: solid whitesmoke;
-  width: 100%;
+  max-width: 100%;
+  max-height: 100%;
   height: auto;
 }
 
